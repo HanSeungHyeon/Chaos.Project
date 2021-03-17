@@ -45,6 +45,7 @@ public class ChaosController {
 		if(nowMem != null) {
 			model.addAttribute("mDTO", ChaS.selEmail(nowMem));	
 		}
+		System.out.println("s");
 		List nList = ChaS.selectAllN();
 		if (nList.size() > 0) {
 			model.addAttribute("nList", nList);
